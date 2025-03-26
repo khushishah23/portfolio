@@ -1,36 +1,30 @@
-import React from "react";
 import { Typewriter } from "react-simple-typewriter";
-import "./Home.css"; 
-import profilePic from "../assets/khushi.jpg"; // Replace with your image path
+import "./Home.css";
+import profilePic from "../assets/khushi.jpg";
 
 const Home = () => {
   return (
     <div className="home-container">
-      <div className="text-section">
-        <h1 className="title">
-          Hey, I'm{" "}
-          <span className="highlight">
-            <Typewriter
-              words={["Khushi Shah", "a Developer", "a Future PM"]}
-              loop={Infinity}
-              cursor
-              cursorStyle="_"
-              typeSpeed={100}
-              deleteSpeed={50}
-              delaySpeed={1000}
-            />
-          </span>
+      <div className="home-content">
+        <h1 className="greeting">
+          Hi, I'm <span className="name-highlight">Khushi Shah</span>
         </h1>
-        <p className="subtitle">Bridging tech and business with innovation.</p>
-        
-        <div className="buttons">
-          <a href="/projects" className="btn">View My Work</a>
-          <a href="/contact" className="btn">Let's Connect</a>
-          <a href="/resume.pdf" className="btn">Download Resume</a>
-        </div>
+        <h2 className="typewriter">
+          <Typewriter
+            words={["Aspiring Product Manager", "Tech Enthusiast", "Event Organizer"]}
+            loop={true}
+            cursor
+            cursorStyle="|"
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={1500}
+          />
+        </h2>
+        <p className="description">
+          Passionate about bridging the gap between **technology and business**, ensuring seamless user experiences, and managing innovative products. Currently diving into AI, web development, and product strategy.
+        </p>
       </div>
-
-      <div className="image-section">
+      <div className="home-image">
         <img src={profilePic} alt="Khushi Shah" className="profile-pic" />
       </div>
     </div>
