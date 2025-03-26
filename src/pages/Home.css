@@ -1,0 +1,77 @@
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+    color: white;
+    text-align: left;
+    padding: 0 5%;
+  }
+  
+  .text-section {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .title {
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .highlight {
+    color: #00ffff; /* Soft neon cyan */
+    font-weight: bold;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #cccccc;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-right: 15px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    border: 2px solid #00ffff;
+    border-radius: 30px;
+    background: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn:hover {
+    background: #00ffff;
+    color: #0d0d0d;
+    box-shadow: 0px 0px 10px #00ffff;
+  }
+  
+  /* 📸 Image Styles */
+  .image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .profile-pic {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 4px 10px rgba(0, 255, 255, 0.3);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .profile-pic:hover {
+    transform: scale(1.05);
+  }
+  
