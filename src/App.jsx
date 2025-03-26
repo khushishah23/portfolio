@@ -4,15 +4,16 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
+import "./App.css";
 
 const App = () => {
   return (
-    <div style={{ backgroundColor: "#121212", minHeight: "100vh", padding: "20px", color: "white" }}>
-      <nav>
-        <Link to="/" style={{ margin: "10px", color: "cyan" }}>Home</Link>
-        <Link to="/about" style={{ margin: "10px", color: "cyan" }}>About</Link>
-        <Link to="/projects" style={{ margin: "10px", color: "cyan" }}>Projects</Link>
-        <Link to="/contact" style={{ margin: "10px", color: "cyan" }}>Contact</Link>
+    <div className="app">
+      <nav className="navbar">
+        <Link to="/" className="nav-link">Home</Link>
+        <Link to="/about" className="nav-link">About</Link>
+        <Link to="/projects" className="nav-link">Projects</Link>
+        <Link to="/contact" className="nav-link">Contact</Link>
       </nav>
 
       <Routes>
